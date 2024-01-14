@@ -1,0 +1,120 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #adb5bd;
+    --red: #ff6b6b;
+    --pink: #f06595;
+    --grape: #cc5de8;
+    --violet: #845ef7;
+    --indigo: #5c7cfa;
+    --blue: #339af0;
+    --cyan: #22b8cf;
+    --teal: #20c997;
+    --green: #51cf66;
+    --lime: #94d82d;
+    --yellow: #fcc419;
+    --orange: #ff922b;
+}
+
+/* ---------------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+/* ---------------------------------------------------------------- */
+
+.input {
+    margin-bottom: 10px;
+}
+
+.input__label {
+    display: block;
+    margin: 10px 0;
+}
+
+.input__input {
+    display: block;
+    border: 2px solid #dedede;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.button {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    margin: 25px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.button--violet {
+    background: var(--violet);
+    font-weight: 700;
+}
+
+.button--indigo {
+    background: var(--indigo);
+    font-weight: 700;
+}
+
+.button--secondary {
+    background: var(--gray);
+    font-weight: 700;
+}
+
+/* ---------------------------------------------------------------- */
+
+.message {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.message--success {
+    background-color: #b2f2bb;
+    color: #2b8a3e;
+}
+
+.message--error {
+    background-color: #ffc9c9;
+    color: #c92a2a;
+}

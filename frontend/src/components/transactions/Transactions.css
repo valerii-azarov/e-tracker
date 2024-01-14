@@ -1,0 +1,122 @@
+.transactions__container {
+  padding: 0;
+}
+
+.transactions__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.transactions__list {
+  padding: 0;
+}
+
+.transactions__list-date {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/* ---------------------------------------------------------------- */
+
+.transaction__card {
+  background: #f8f8f8;
+  border: 1px solid lightgray;
+  border-radius: 0 10px 10px 0;
+  margin: 10px 0;
+}
+
+.transaction__card.income {
+  border-left: 10px solid var(--green);
+}
+
+.transaction__card.expense {
+  border-left: 10px solid var(--red);
+}
+
+/* ---------------------------------------------------------------- */
+
+.transaction__card-inner {
+  display: flex;
+  justify-content: space-between;
+  height: 85px;
+  width: 100%;
+  padding: 15px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.transaction__card-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction__card-title {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+
+.transaction__card-title h2 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.transaction__card-title p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000000;
+  background-color: #ffe066;
+  border-radius: 6px;
+  padding: 4px 12px;
+  margin: 0;
+}
+
+.transaction__card-title i {
+  font-size: 18px;
+  color: red;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.transaction__card-title i:hover {
+  color: darkred;
+  transform: translateY(-2px);
+}
+
+.transaction__card-description p {
+  font-size: 14px;
+  max-width: 600px;
+  line-height: 1.5;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* ---------------------------------------------------------------- */
+
+.transaction__card-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.transaction__card-amount p,
+.transaction__card-date p {
+  text-align: right;
+  margin: 0;
+}
+
+.transaction__card-amount p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.transaction__card-date p {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.8;
+}

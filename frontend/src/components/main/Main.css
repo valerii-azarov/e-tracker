@@ -1,0 +1,52 @@
+.main {
+    height: calc(100% - 60px);
+    width: 100%;
+}
+
+.main__container {
+    padding: 20px 50px;
+}
+
+.main__title {
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+/* ---------------------------------------------------------------- */
+
+.main__cards {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background: #f8f8f8;
+    color: #000000;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 200px;
+    margin: 15px 0;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.card:hover {
+    background: #e9ecef;
+}
+
+/* ---------------------------------------------------------------- */
+
+.card__inner {
+    padding: 20px;
+    text-align: center;
+}
+
+.card__inner p {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}

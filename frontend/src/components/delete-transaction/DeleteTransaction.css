@@ -1,0 +1,31 @@
+.delete-transaction {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.delete-transaction__container {
+    width: 350px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fcfcfc;
+}
+
+.delete-transaction__title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.delete-transaction__hint {
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0.7;
+}

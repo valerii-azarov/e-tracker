@@ -1,0 +1,64 @@
+.balance__container {
+    padding: 0;
+}
+
+.balance__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.balance__cards {
+    display: flex;
+    gap: 25px;
+}
+
+.balance__card {
+    display: flex;
+    background: #f8f8f8;
+    color: #ffffff;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    height: 125px;
+    width: 250px;
+    padding: 15px;
+}
+
+.balance__card.total {
+    background: var(--violet);
+}
+
+.balance__card.income {
+    background: var(--green);
+}
+
+.balance__card.expense {
+    background: var(--red);
+}
+
+/* ---------------------------------------------------------------- */
+
+.balance__card-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.balance__card-inner p,
+.balance__card-inner span {
+    font-size: 14px;
+    margin: 0;
+}
+
+.balance__card-inner p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.balance__card-inner span {
+    font-size: 28px;
+    font-weight: 400;
+}
